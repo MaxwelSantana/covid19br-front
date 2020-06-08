@@ -1,0 +1,70 @@
+.container {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-title {
+    margin: 20px 10px;
+}
+
+.totalizadores {
+    display: flex;
+}
+
+.totalizadores .card {
+    padding: 20px 16px;
+    margin: 0 10px 10px;
+    width: calc(25% - 20px);
+    min-height: 230px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.totalizadores .card .title {
+    font-weight: 300;
+}
+
+.totalizadores .card .color-label {
+    margin-top: 10px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.totalizadores .card .number {
+    font-size: 46px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 0 10px;
+    }
+    .totalizadores {
+        flex-direction: column;
+    }
+    .totalizadores .card {
+        width: calc(100% - 20px);
+    }
+}
+
+.totalizadores .card.card-color-green {
+    color: #1da584;
+}
+
+.totalizadores .card.card-color-green .color-label {
+    background: linear-gradient(90deg, rgba(29,165,132,1) 0%, rgba(26,138,111,1) 46%, rgba(13,74,59,1) 100%);
+}
+
+.totalizadores .card.card-color-blue {
+    color: #6458c3;
+}
+
+.totalizadores .card.card-color-blue .color-label {
+    background: linear-gradient(90deg, rgba(100,88,195,1) 0%, rgba(77,68,148,1) 46%, rgba(53,46,101,1) 100%);
+}
